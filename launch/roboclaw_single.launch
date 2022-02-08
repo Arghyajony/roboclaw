@@ -4,8 +4,17 @@
         Roboclaw 0x80 Index: 0
     -->
     <node pkg="roboclaw" type="roboclaw_node" name="roboclaw" output="screen">
+    <!--
+        For Raspberry Pi Serial Communication 
+    -->
         <param name="~serial_port" value="/dev/ttyS0"/>
         <param name="~baudrate" value="115200"/>
+        
+    <!--
+        For Jetson Nano Serial Communication 
+    -->
+        <param name="~serial_port" value="/dev/ttyTHS1"/>
+        <param name="~baudrate" value="38400"/>
         <param name="~roboclaws" value="1"/>
     </node>
 
