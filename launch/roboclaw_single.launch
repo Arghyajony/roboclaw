@@ -12,6 +12,9 @@
         
     <!--
         For Jetson Nano Serial Communication 
+        (Jetson nano has lesser amps on UART than RPI/Arduino, use usb to tty device and timeout 0.01 in the library) 
+        see: https://forums.basicmicro.com/viewtopic.php?f=2&t=1102 and
+             https://forums.basicmicro.com/viewtopic.php?f=2&t=961&p=3656&hilit=jetson+nano#p3656
     -->
         <param name="~serial_port" value="/dev/ttyTHS1"/>
         <param name="~baudrate" value="38400"/>
